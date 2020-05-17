@@ -3,17 +3,28 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Links = styled.div`
+    /* background-color: pink; */
+    display: flex;
+    align-items: stretch;
     & ul {
         list-style: none;
         padding-left: 0px;
         display: flex;
-        margin: 0;
+        /* background: yellow;   */
+        margin:0;
+        align-items: center;
         & li {
-            margin: 0 5px;
+            margin: 0 20px;
+            &:last-child{
+                a{
+                    padding: 10px 6px;
+                    border-radius: 50%;
+                    background-color: green;
+                }
+            }
         }
     }
 `;
-
 
 const SignedInLinks = () => {
     return (
@@ -26,7 +37,7 @@ const SignedInLinks = () => {
                     <NavLink to='/'>Log Out</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>NN</NavLink>
+                    <NavLink to='/'>MM</NavLink> 
                 </li>
             </ul>
         </Links>

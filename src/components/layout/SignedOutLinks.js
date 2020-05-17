@@ -3,13 +3,16 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Links = styled.div`
+    /* background-color: aqua; */
     & ul {
         list-style: none;
         padding-left: 0px;
         display: flex;
-        margin: 0;
         & li {
-            margin: 0 5px;
+            margin: 0 20px;
+            & a{
+                /* color: white; */
+            }
         }
     }
 `;

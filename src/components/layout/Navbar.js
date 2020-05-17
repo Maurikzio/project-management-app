@@ -9,20 +9,37 @@ import SignedOutLinks from './SignedOutLinks'
 const Navigator = styled.div`
     font-size: 20px;
     display: flex;
-    justify-content: space-around;
+    background-color: orange;
+    padding: 5px 0px;
+    a{
+        text-decoration: none;
+    }
 `;
 const Logo = styled.div`
-
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    /* background-color: pink; */
+    & a {
+        font-size: 50px;
+    }
+`;
+const Auth = styled.div`
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
 `;
 
 const Navbar = () => {
     return (
         <Navigator>
             <Logo>
-                <Link to='/'>Project Manager</Link>
+                <Link to='/'>Project Manager App</Link>
             </Logo>
-            <SignedOutLinks/>
-            <SignedInLinks/>
+            <Auth>
+                <SignedOutLinks/>
+                <SignedInLinks/>
+            </Auth>
         </Navigator>
     )
 }
