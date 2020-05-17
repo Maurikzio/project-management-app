@@ -31,13 +31,13 @@ const SignedInLinks = () => {
         <Links>
             <ul>
                 <li>
-                    <NavLink to='/'>New Project</NavLink>
+                    <NavLink to='/project-management-app/create'>New Project</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>Log Out</NavLink>
+                    <NavLink to='/project-management-app/'>Log Out</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>MM</NavLink> 
+                    <NavLink to='/project-management-app'>MM</NavLink> 
                 </li>
             </ul>
         </Links>

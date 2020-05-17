@@ -23,10 +23,10 @@ const SignedOutLinks = () => {
         <Links>
             <ul>
                 <li>
-                    <NavLink to='/'>Signup</NavLink>
+                    <NavLink to='/project-management-app/signup'>Signup</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/'>Login</NavLink>
+                    <NavLink to='/project-management-app/signin'>Login</NavLink>
                 </li>
             </ul>
         </Links>

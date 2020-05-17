@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <Navigator>
             <Logo>
-                <Link to='/'>Project Manager App</Link>
+                <Link to='/project-management-app'>Project Manager App</Link>
             </Logo>
             <Auth>
                 <SignedOutLinks/>
