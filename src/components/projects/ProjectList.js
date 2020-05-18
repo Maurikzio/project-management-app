@@ -7,11 +7,14 @@ const ProjectsContainer = styled.div`
     border: 1px solid red;
 `
 
-const ProjectList = () => {
+const ProjectList = ({projects}) => {
     return (
         <ProjectsContainer>
-            <ProjectSummary/>
-            <ProjectSummary/>
+            { projects && projects.map(project => {
+                return (
+                    <ProjectSummary project={project} key={project.id}/>
+                )
+            })}
         </ProjectsContainer>
     )
 }
