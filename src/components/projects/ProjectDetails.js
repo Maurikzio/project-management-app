@@ -7,8 +7,8 @@ import { compose } from 'redux';
 const ProjectDetails = (props) => {
     const id = props.match.params.id;
     const { project } = props;
-    console.log('my project:');
-    console.log(project);
+    // console.log('my project:');
+    // console.log(project);
 
     if(!project){ //ya que al activarse el componente aun no se tiene los datos desde firebase
         return (

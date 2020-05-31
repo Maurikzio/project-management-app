@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
 
-import SignedInLinks from './SignedInLinks'
-import SignedOutLinks from './SignedOutLinks'
+import SignedInLinks from './SignedInLinks';
+import SignedOutLinks from './SignedOutLinks';
+
 
 
 const Navigator = styled.div`
@@ -30,6 +32,9 @@ const Auth = styled.div`
     justify-content: center;
 `;
 
+//we just need the FIREBASE property state to get the auth user info
+//we dont need the firestore here
+
 const Navbar = () => {
     return (
         <Navigator>
@@ -44,4 +49,11 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+const mapStateToProps = (state) => {
+    // console.log(state)
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps, null)(Navbar);
