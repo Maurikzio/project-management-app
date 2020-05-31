@@ -3,8 +3,8 @@
  import 'firebase/auth'
  
  // Your web app's Firebase configuration
- var firebaseConfig = {
-    apiKey: "AIzaSyDYFY6lmM0UXFDWVaeHiKRS0lYo6NdHhKo",
+ const firebaseConfig = {
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "project-manager-app-a4212.firebaseapp.com",
     databaseURL: "https://project-manager-app-a4212.firebaseio.com",
     projectId: "project-manager-app-a4212",
@@ -15,7 +15,9 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  firebase.firestore().settings({ timestampsInSnapshots: true });
+//   firebase.analytics();
+//   firebase.firestore().settings({ timestampsInSnapshots: true });
+  firebase.firestore();
+
 
   export default firebase;
